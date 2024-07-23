@@ -2,18 +2,19 @@
 package main
 
 import (
-	"flag"
 	"fmt"
-	"strings"
 )
 
-var n = flag.Bool("n", false, "omit trailing newline")
-var sep = flag.String("s", " ", "separator")
+// var n = flag.Bool("n", false, "omit trailing newline")
+// var sep = flag.String("s", " ", "separator")
+var g string = "hhhh"
 
 func main() {
-	flag.Parse()
-	fmt.Print(strings.Join(flag.Args(), *sep))
-	if !*n {
-		fmt.Println()
-	}
+	var g string = "aaa"
+	fmt.Printf("g =  %v\n", g)
+	// flag.Parse()
+	// fmt.Print(strings.Join(flag.Args(), *sep))
+	// if !*n {
+	// 	fmt.Println()
+	// }
 }
