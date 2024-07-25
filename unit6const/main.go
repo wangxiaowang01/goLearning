@@ -27,7 +27,7 @@ const (
 func main() {
 	// fmt.Printf("Friday %v\n", Friday)
 	fmt.Printf("Flags %v\n", FlagUp)
-	fmt.Printf("FlagBroadcast %v\n", FlagBroadcast)
+	fmt.Printf("FlagBroadcast2 %v\n", FlagBroadcast)
 	fmt.Printf("FlagLoopback %v\n", FlagLoopback)
 	fmt.Printf("FlagPointToPoint %v\n", FlagPointToPoint)
 	fmt.Printf("FlagMulticast %v\n", FlagMulticast)
