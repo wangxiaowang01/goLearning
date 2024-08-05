@@ -56,7 +56,7 @@ func main() {
 	}
 	fmt.Printf("修改前的1  x= %v\n", testPoint.x)
 	testPoint.ScaleBy(3)
-	fmt.Printf("使用值方法ScaleBy修改后的x= %v\n", testPoint.x)
+	fmt.Printf("使用值方法ScaleBy修改后的x = %v\n", testPoint.x)
 	testPoint.ScaleBy2(3)
 	fmt.Printf("使用指针方法ScaleBy修改后的x= %v\n", testPoint.x)
 
