@@ -31,7 +31,7 @@ func aaa(a animal) {
 
 func main() {
 
-	c := cat{"蓝猫"}
+	c := cat{"蓝猫1"}
 	// d := dog{"哮天犬"}
 
 	// c.say()
