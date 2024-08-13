@@ -40,7 +40,7 @@ func main() {
 	// a.say()
 
 	// fmt.Println(a)        // <nil>
-	// fmt.Printf("%T\n", a) // <nil>  因为a是没有意义的
+	// fmt.Printf("%T\n", a) // <nil>  因为a是没有意义的1
 	a = c
 	// fmt.Println(a)        // {蓝猫}
 	// fmt.Printf("%T\n", a) // main.cat
