@@ -1,0 +1,150 @@
+
+###
+GET  http://localhost:8080/ping
+
+###
+POST  http://localhost:8080/rpc
+
+{"jsonrpc":"1.0","method":"getblockcount","params":[],"id":1}
+###
+POST  http://localhost:8080/rpc
+
+{
+    "method":"blockNumber",
+    "params":[
+        {
+            "Index":"latest"
+        }
+    ],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+###
+POST  http://localhost:8080/rpc
+
+{
+    "method":"balance",
+    "params":[
+        {
+            "Account":"receiver1"
+        }
+    ],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+
+###
+POST  http://localhost:8080/rpc
+
+{
+    "method":"Transaction.Transaction",
+    "params":[
+        {
+                "hash":"00xx02"
+            }
+    ],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+###
+POST  http://localhost:8080/rpc
+
+{
+    "method":"Transaction.SubmitTransaction",
+    "params":[
+        {
+                "type": 0,
+                "hash": "00xx01",
+                "sender": "",
+                "receiver": "receiver1",
+                "value": 10002,
+                "status": ""
+            }
+    ],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+
+###
+POST  http://localhost:8080/rpc
+
+{
+    "method":"Transaction.SubmitTransaction",
+    "params":[
+        {
+                "type": 1,
+                "hash": "00xx02",
+                "sender": "receiver1",
+                "receiver": "receiver2",
+                "value": 5,
+                "status": ""
+            }
+    ],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+
+###
+POST  http://localhost:8080/rpc
+
+{
+    "method":"Say",
+    "params":[],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+###
+POST  http://localhost:8080/rpc
+
+{
+    "method":"BlockTestService.GetBlockCount",
+    "params":[],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+### 第 1 个
+POST  http://localhost:8080/rpc
+
+{
+    "method":"getblockcount",
+    "params":[],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+
+### 第 2 个
+POST  http://localhost:8080/rpc
+
+{
+    "method":"getblockhash",
+    "params":[2723],
+    "id":1,
+    "jsonrpc":"2.0"
+}
+
+### 发一个mock交易数据
+POST  http://localhost:8080/rpc
+Content-Type: application/json
+
+{
+  "jsonrpc": "1.0",
+  "method": "mockreqtrx",
+  "params": [{
+    "tx": {
+      "txin": [
+        {
+          "hash": "cb7e1e777cdb15a6f6f7f637763e88d328ca01db5c2a59743bad7d04d5df4e9d",
+          "index": 0
+        }
+      ],
+      "txout": [
+        {
+          "address": "DGEPAvRQWYSTj29DrnQctCHt6bYcGi5Sx7",
+          "value": 1231
+        }
+      ]
+    }
+  }
+  ],
+  "id": 1
+}

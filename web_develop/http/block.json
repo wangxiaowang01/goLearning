@@ -1,0 +1,51 @@
+[
+    {
+        "method": "Block.BlockNumber",
+        "params": [
+            {
+                "Index": "latest"
+            }
+        ],
+        "id": 1,
+        "jsonrpc": "2.0"
+    },
+    {
+        "method": "Account.Balance",
+        "params": [
+            {
+                "Account": "60f952177e4cb0502187066076340b9fae67afc7888dff9798cb5975a538fee2"
+            }
+        ],
+        "id": 1,
+        "jsonrpc": "2.0"
+    },
+    {
+        "Transaction": {
+            "type": "交易类型",
+            "Hash": "哈希，这个哈希是交易哈希",
+            "Sender": "发送者",
+            "Receiver": "接收者",
+            "Value": "金额 ",
+            "Status": "状态，通过接口提交过来的状态应该是空的，这个是需要程序判断后加进去的  "
+        }
+    },
+    {
+        "Account": "string",
+        "Value": "*big.Int"
+    },
+    {
+        "method": "Transaction.SubmitTransaction",
+        "params": [
+            {
+                "type": "交易类型，1和2，1是mint，2是交易",
+                "Hash": "哈希，这个哈希是交易哈希",
+                "Sender": "发送者",
+                "Receiver": "接收者",
+                "Value": "金额 ",
+                "Status": "状态，通过接口提交过来的状态应该是空的，这个是需要程序判断后加进去的  "
+            }
+        ],
+        "id": 1,
+        "jsonrpc": "2.0"
+    }
+]
